@@ -1,16 +1,24 @@
 import { worksData } from "../data";
+import { motion } from "framer-motion";
 
 const WorksSec = () => {
   return (
-    <section className="w-full py-12 md:py-20 bg-gray-50">
+    <section className="w-full py-12 md:py-20">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {worksData.map((work, index) => (
-            <div
-              key={index} // agar id bo‘lsa work.id ishlatish yaxshiroq
+            <motion.div
+              key={index}
+              initial={{ opacity: 0, y: 60 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: "-100px" }}
+              transition={{
+                duration: 0.5,
+                delay: index * 0.15,
+                ease: "easeOut",
+              }}
               className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 group"
             >
-              {/* Rasm */}
               <div className="relative overflow-hidden">
                 <img
                   src={work.img}
@@ -19,9 +27,8 @@ const WorksSec = () => {
                 />
               </div>
 
-              {/* Matn va tugma */}
               <div className="p-6 sm:p-8">
-                <h3 className="uppercase text-xl sm:text-2xl font-bold text-gray-900 mb-3 group-hover:text-blue-600 transition-colors">
+                <h3 className="uppercase text-xl sm:text-2xl font-bold text-gray-900 mb-3 group-hover:text-orange-600 transition-colors">
                   {work.title}
                 </h3>
 
@@ -29,7 +36,7 @@ const WorksSec = () => {
 
                 <a
                   href={work.link}
-                  className="w-full sm:w-auto px-6 py-3 bg-blue-600 text-white font-medium rounded-lg hover:cursor-pointer hover:bg-blue-700 transition-colors duration-200 flex items-center justify-center gap-2"
+                  className="w-full sm:w-auto px-6 py-3 bg-orange-500 text-white font-medium rounded-lg hover:cursor-pointer hover:bg-orange-600 transition-colors duration-200 flex items-center justify-center gap-2"
                 >
                   Go to {work.title}
                   <svg
@@ -47,7 +54,7 @@ const WorksSec = () => {
                   </svg>
                 </a>
               </div>
-            </div>
+            </motion.div>
           ))}
         </div>
       </div>
