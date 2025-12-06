@@ -1,7 +1,7 @@
 import ContactSec from "../components/ContactSec.jsx";
 import HeroSec from "../components/HeroSec.jsx";
 import News from "../components/News.jsx";
-import SolutionSec from "../components/solutionSec.jsx";
+import SolutionSec from "../components/SolutionSec.jsx";
 import WorksSec from "../components/WorksSec.jsx";
 
 const Home = () => {

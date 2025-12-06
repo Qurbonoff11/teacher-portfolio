@@ -2,7 +2,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
-import { coruselData } from "../data";
+import { coruselData } from "../data.jsx";
 import { motion } from "framer-motion";
 
 const slideVariants = {
@@ -15,7 +15,6 @@ const News = () => {
   return (
     <section className="w-full py-16">
       <div className="container mx-auto px-4">
-
         <motion.div
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}

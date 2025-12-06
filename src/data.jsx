@@ -1,4 +1,3 @@
-import { FcIdea } from "react-icons/fc";
 import {
   corusel1,
   globalImg,
