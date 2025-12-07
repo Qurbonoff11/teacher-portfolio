@@ -17,7 +17,6 @@ const Contact = () => {
   return (
     <main className="w-full min-h-screen bg-linear-to-b from-slate-50 via-white to-slate-100 py-24">
       <div className="container mx-auto px-6 max-w-7xl">
-
         <motion.div
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
@@ -33,8 +32,12 @@ const Contact = () => {
           </p>
         </motion.div>
 
-        <FormComp register={register} errors={errors} handleSubmit={handleSubmit} onSubmit={onSubmit}/>
-
+        <FormComp
+          register={register}
+          errors={errors}
+          handleSubmit={handleSubmit}
+          onSubmit={onSubmit}
+        />
       </div>
     </main>
   );
