@@ -1,8 +1,8 @@
-import ContactSec from "../components/ContactSec.jsx";
-import HeroSec from "../components/HeroSec.jsx";
-import News from "../components/News.jsx";
-import SolutionSec from "../components/SolutionSec.jsx";
-import WorksSec from "../components/WorksSec.jsx";
+import ContactSec from "../components/sections/Home/ContactSec.jsx";
+import HeroSec from "../components/sections/Home/HeroSec.jsx";
+import News from "../components/sections/Home/News.jsx";
+import SolutionSec from "../components/sections/Home/SolutionSec.jsx";
+import WorksSec from "../components/sections/Home/WorksSec.jsx";
 
 const Home = () => {
   return (

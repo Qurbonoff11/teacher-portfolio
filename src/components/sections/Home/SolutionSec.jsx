@@ -1,4 +1,4 @@
-import { solutionData } from "../data.jsx";
+import { solutionData } from "../../../data.jsx";
 import { motion } from "framer-motion";
 
 const SolutionSec = () => {

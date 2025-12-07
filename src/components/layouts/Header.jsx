@@ -47,8 +47,8 @@ const Header = () => {
                 {isSolid && (
                   <span
                     className="absolute bottom-0 left-0 w-full h-0.5 bg-orange-500 rounded-full
-                               origin-left scale-x-0 transition-transform duration-400
-                               group-hover:scale-x-100 aria-[current=page]:scale-x-100"
+                              origin-left scale-x-0 transition-transform duration-400
+                              group-hover:scale-x-100 aria-[current=page]:scale-x-100"
                   />
                 )}
               </NavLink>

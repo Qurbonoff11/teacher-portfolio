@@ -1,4 +1,4 @@
-import { worksData } from "../data.jsx";
+import { worksData } from "../../../data.jsx";
 import { motion } from "framer-motion";
 
 const WorksSec = () => {

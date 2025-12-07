@@ -8,7 +8,7 @@ import Footer from "./components/layouts/Footer";
 const App = () => {
   return (
     <div className="min-h-screen bg-white dark:bg-slate-900 text-black dark:text-white transition-colors duration-300 overflow-hidden">
-      <Header/>
+      <Header />
 
       <Routes>
         <Route path="/" element={<Home />} />
